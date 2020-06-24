@@ -2,11 +2,14 @@
 const express = require('express');
 const { urlencoded } = require('body-parser');
 const path = require("path");
+// const { v4: uuidv4 } = require('uuid');
 
 // Database
 // The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
 let db = require('./db/db.json');
 const fs = require('fs');
+
+
 
 
 // Port
@@ -54,7 +57,7 @@ app.post('/api/notes', (req, res) => {
         }
     });
     res.json(db);
-     console.log('Database: ', db);
+    console.log('Database: ', db);
 });
 
 // DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file. */

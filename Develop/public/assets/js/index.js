@@ -52,7 +52,9 @@ const renderActiveNote = () => {
 
 // Get the note data from the inputs, save it to the db and update the view
 const handleNoteSave = function () {
+  let newID = Math.floor((Math.random()*1000000000));
   const newNote = {
+    id: newID,
     title: $noteTitle.val(),
     text: $noteText.val(),
   };
