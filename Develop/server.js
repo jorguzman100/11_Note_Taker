@@ -26,8 +26,8 @@ app.use(express.static(__dirname + '/public')); // For everything is running in 
 
 // GET `*` - Should return the `index.html` file
 app.get('/', (req, res) => {
-    console.log('Root: /');
     res.sendFile(path.join(__dirname, './public/index.html'));
+    console.log('Root: /');
 });
 
 // GET `/notes` - Should return the `notes.html` file.
