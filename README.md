@@ -1,80 +1,113 @@
-# Unit 11 Express Homework: Note Taker
+# Note Taker
 
-## Description
+An application that can be used to write, save, and delete notes. This application uses an express backend, and save and retrieve note data from a JSON file.
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+## Badges
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+Code quality and validation
 
-* The following HTML routes should be created:
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jorguzman100/11_Note_Taker.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jorguzman100/11_Note_Taker/context:javascript)
+![shields.io](https://img.shields.io/github/languages/top/jorguzman100/11_Note_Taker)
+![shields.io](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fjorguzman100.github.io%2F11_Note_Taker%2F)
 
-  * GET `/notes` - Should return the `notes.html` file.
+Repository Status
 
-  * GET `*` - Should return the `index.html` file
+![shields.io](https://img.shields.io/badge/Repo%20Status-finished-brightgreen)
+![shields.io](https://img.shields.io/bitbucket/issues/jorguzman100/11_Note_Taker)
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+License
 
-* The following API routes should be created:
+![GitHub](https://img.shields.io/github/license/jorguzman100/11_Note_Taker)
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+## Table of contents
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+- [Note Taker](#note-taker)
+  - [Badges](#badges)
+  - [Table of contents](#table-of-contents)
+  - [The challenge](#the-challenge)
+  - [The development process](#the-development-process)
+  - [The Output](#the-output)
+  - [Installation and Usage - PENDING](#installation-and-usage---pending)
+  - [Credits, tools and other references](#credits-tools-and-other-references)
+  - [Contributing](#contributing)
+  - [Questions](#questions)
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+## The challenge
 
-## User Story
+The application frontend has already been created, it's your job to build the backend and connect the two.
 
-AS A user, I want to be able to write and save notes
+Main elements:
 
-I WANT to be able to delete notes I've written before
+- [x] Write, save, and delete notes
+- [x] The application should have a `db.json` file on the backend
+- [x] The following API routes should be created:
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+  - GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
 
-## Business Context
+  - POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+  - DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
-## Acceptance Criteria
+## The development process
 
-Application should allow users to create and save notes.
+In order to accomplish the challenge, the following steps were done:
 
-Application should allow users to view previously saved notes.
+1. Understand the purpose, concept and frontend functionality of the application.
+2. Research assets.
+3. Include dependencies.
+4. Develop and test HTML and API routes.
+5. Link frontend with the backend.
+6. Final review and proper documentation.
 
-Application should allow users to delete previously saved notes.
+## The Output
 
-## Deploying the App
+With the described process we were able to create a useful and efficient fullstack application that write, save, and delete notes.
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Supplemental/HerokuGuide.md) for getting your app deployed on Heroku.
+**User story**
 
-- - -
+1. As a user, I can write and save notes, so that I can organize my thoughts and keep track of tasks I need to complete.
+2. As a user I can delete notes I have wirtten before, so that I can keep my notes updated.
 
-## Commit Early and Often
+**The application**
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+![](./Develop/public/assets/images/screenshot1.png)
+![](./Develop/public/assets/images/screenshot2.png)
+![](./Develop/public/assets/images/screenshot3.png)
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## Installation and Usage - PENDING
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+The project was uploaded to [GitHub](https://github.com/) at the following repository:
+[https://github.com/jorguzman100/11_Note_Taker](https://github.com/jorguzman100/11_Note_Taker)
 
-Follow these guidelines for committing:
+You can access the deployed application with the Heroku Pages link:
+[https://jorguzman100.github.io/11_Note_Taker/](https://jorguzman100.github.io/11_Note_Taker/)
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+To install the project follow these steps:
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+1. Step
+2. Step
+3. Step
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+## Credits, tools and other references
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+**Third Party Assets**
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+[Bootstrap](https://getbootstrap.com/)
 
-## Submission on BCS
+[Font Awesome](https://fontawesome.com/)
 
-You are required to submit the following:
+[Shields.io](https://shields.io/)
 
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
+[LGTM](https://lgtm.com/)
 
-* The URL of the GitHub repository
+[Markup Validation Service](https://validator.w3.org/)
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Contributing
+
+- Pull requests are welcome.
+- For major changes, please open an issue first to discuss what you would like to change.
+- Please make sure to update tests as appropriate.
+
+## Questions
+
+If you have questions or you want to share comments, I will be glad to hear from you. Please contact at jorguzman100@gmail.com.
