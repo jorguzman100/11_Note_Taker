@@ -27,7 +27,7 @@ License
   - [The challenge](#the-challenge)
   - [The development process](#the-development-process)
   - [The Output](#the-output)
-  - [Installation and Usage - PENDING](#installation-and-usage---pending)
+  - [Installation and Usage](#installation-and-usage)
   - [Credits, tools and other references](#credits-tools-and-other-references)
   - [Contributing](#contributing)
   - [Questions](#questions)
@@ -74,7 +74,7 @@ With the described process we were able to create a useful and efficient fullsta
 ![](./public/assets/images/screenshot2.png)
 ![](./public/assets/images/screenshot3.png)
 
-## Installation and Usage - PENDING
+## Installation and Usage
 
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/jorguzman100/11_Note_Taker](https://github.com/jorguzman100/11_Note_Taker)
