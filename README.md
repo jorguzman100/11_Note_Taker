@@ -70,23 +70,26 @@ With the described process we were able to create a useful and efficient fullsta
 
 **The application**
 
-![](./Develop/public/assets/images/screenshot1.png)
-![](./Develop/public/assets/images/screenshot2.png)
-![](./Develop/public/assets/images/screenshot3.png)
+![](./public/assets/images/screenshot1.png)
+![](./public/assets/images/screenshot2.png)
+![](./public/assets/images/screenshot3.png)
 
 ## Installation and Usage - PENDING
 
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/jorguzman100/11_Note_Taker](https://github.com/jorguzman100/11_Note_Taker)
 
-You can access the deployed application with the Heroku Pages link:
-[https://jorguzman100.github.io/11_Note_Taker/](https://jorguzman100.github.io/11_Note_Taker/)
+You can access the deployed application with the Heroku link:
+[https://fierce-earth-57501.herokuapp.com/](https://fierce-earth-57501.herokuapp.com/)
 
 To install the project follow these steps:
 
-1. Step
-2. Step
-3. Step
+1. Clone the application from GitHub with:
+   - git clone [clone link from GitHub]
+2. From the root folder, install the dependencies with:
+   - npm install
+3. Run the app with:
+   - node server.js
 
 ## Credits, tools and other references
 
